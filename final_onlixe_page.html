@@ -1,3 +1,4 @@
+<!-- سكريبت Onlixe Games - نسخة محسّنة -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
-    /* جميع التنسيقات من السكريبت الكامل موجودة هنا */
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
@@ -44,10 +44,6 @@
       font-size: 20px;
       font-weight: bold;
       color: #00e5ff;
-    }
-
-    .hero {
-      position: relative;
     }
 
     .hero img {
@@ -263,16 +259,20 @@
     }
 
     footer {
-      background-color: #0f0f0f;
-      padding: 20px;
+      background-color: #0a0a0a;
+      padding: 30px 20px;
       font-size: 14px;
       color: #aaa;
       text-align: center;
     }
 
+    footer p {
+      margin: 10px 0;
+    }
+
     footer a {
       color: #00e5ff;
-      margin: 0 10px;
+      margin: 0 8px;
       text-decoration: none;
     }
 
@@ -303,7 +303,7 @@
   <div class="view-all"><a href="#">View All Games →</a></div>
 
   <div class="games-grid">
-    <!-- أمثلة للألعاب -->
+    <!-- الألعاب الأصلية + إضافات -->
     <div class="game-card">
       <img src="https://i.postimg.cc/wv2PLSQY/baseball-9-300x300.png" alt="BeamNG.drive Mobile">
       <h3>BeamNG.drive Mobile</h3>
@@ -316,31 +316,40 @@
       <div class="version">v1.0.3095/1.68</div>
       <div class="stars">★★★★★ 4.9</div>
     </div>
+    <div class="game-card">
+      <img src="https://i.postimg.cc/wv2PLSQY/baseball-9-300x300.png" alt="Assetto Corsa">
+      <h3>Assetto Corsa Mobile</h3>
+      <div class="version">v1.16.4</div>
+      <div class="stars">★★★★★ 4.8</div>
+    </div>
+    <div class="game-card">
+      <img src="https://i.postimg.cc/wv2PLSQY/baseball-9-300x300.png" alt="Forza Horizon 5">
+      <h3>Forza Horizon 5 Mobile</h3>
+      <div class="version">v1.656.386.0</div>
+      <div class="stars">★★★★★ 5.0</div>
+    </div>
+    <!-- ألعاب إضافية -->
+    <div class="game-card">
+      <img src="https://i.postimg.cc/wv2PLSQY/baseball-9-300x300.png" alt="Minecraft PE">
+      <h3>Minecraft Pocket Edition</h3>
+      <div class="version">v1.20.41</div>
+      <div class="stars">★★★★★ 4.7</div>
+    </div>
+    <div class="game-card">
+      <img src="https://i.postimg.cc/wv2PLSQY/baseball-9-300x300.png" alt="PUBG Mobile MOD">
+      <h3>PUBG Mobile MOD</h3>
+      <div class="version">v3.1.0</div>
+      <div class="stars">★★★★★ 4.5</div>
+    </div>
   </div>
 
   <section class="how-it-works" id="how-it-works">
     <h2>How It Works</h2>
     <div class="steps">
-      <div class="step">
-        <div class="icon">🔍</div>
-        <h3>Find Your Game</h3>
-        <p>Browse our collection of modded games or search for what you want.</p>
-      </div>
-      <div class="step">
-        <div class="icon">⬇️</div>
-        <h3>Complete Offer</h3>
-        <p>Complete a quick offer (less than 1 minute) to unlock the download.</p>
-      </div>
-      <div class="step">
-        <div class="icon">📱</div>
-        <h3>Download & Install</h3>
-        <p>Get your download link and install the game with our instructions.</p>
-      </div>
-      <div class="step">
-        <div class="icon">🎮</div>
-        <h3>Enjoy Premium</h3>
-        <p>Play with all premium features unlocked - unlimited money, no ads!</p>
-      </div>
+      <div class="step"><div class="icon">🔍</div><h3>Find Your Game</h3><p>Browse or search any game you want.</p></div>
+      <div class="step"><div class="icon">⬇️</div><h3>Complete Offer</h3><p>Quick step to unlock your download.</p></div>
+      <div class="step"><div class="icon">📱</div><h3>Download & Install</h3><p>Install the game easily.</p></div>
+      <div class="step"><div class="icon">🎮</div><h3>Enjoy Premium</h3><p>No ads, unlimited features.</p></div>
     </div>
   </section>
 
@@ -363,15 +372,16 @@
     <p>
       <a href="#">Home</a> |
       <a href="#">Games</a> |
-      <a href="#">Contact</a> |
-      <a href="#">Terms</a>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Use</a> |
+      <a href="#">About Us</a> |
+      <a href="#" onclick="toggleContact()">Contact</a>
     </p>
   </footer>
 
   <script>
     function toggleContact() {
-      const overlay = document.getElementById('contact-overlay');
-      overlay.classList.toggle('hidden');
+      document.getElementById('contact-overlay').classList.toggle('hidden');
     }
 
     function submitContactForm() {
@@ -383,5 +393,7 @@
       toggleContact();
     }
   </script>
+
 </body>
 </html>
+
